@@ -23,7 +23,7 @@ jobs:
           gem install asciidoctor
 
       - name: Build HTML
-        run: asciidoctor --backend=html5 -o docs/index.html docs/*.adoc
+        run: asciidoctor --backend=html5 -o docs/index.html ./*.adoc
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
