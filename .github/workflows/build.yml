@@ -21,9 +21,10 @@ jobs:
       - name: Install dependencies
         run: |
           gem install asciidoctor
+          gem install asciidoctor-diagram
 
       - name: Build HTML
-        run: asciidoctor --backend=html5 -o docs/index.html ./*.adoc
+        run: asciidoctor -r asciidoctor-diagram -D docs index.adoc
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

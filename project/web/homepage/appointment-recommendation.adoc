@@ -1,0 +1,40 @@
+= Appointment Recommendation Homepage Widget
+
+Recommendations are generated on the server through a GET request to `/appointments/user/recommendations`.
+
+== API Documentation
+
+You can find the API documentation for the recommendations feature at the following link:
+link:https://backend-production-3d82.up.railway.app/api-docs/#/Appointments/get-appointments-user-recommendations[API Documentation]
+
+== Recommendations List
+
+The backend always returns the same list of recommendations for any request. By default, the recommendations list should show two or fewer items.
+
+On narrow screens, the recommendations list should be positioned under the 'Your Care Team' widget.
+
+=== Interaction
+
+Clicking on a recommendation item or the 'See more' button does not have any expected functionality in the current version.
+
+=== Open Questions
+
+The following open questions need to be addressed:
+
+==== What should happen when the user clicks one of the items?
+
+I would expect it to start the 'Create an appointment' flow. However, as we don't have this functionality yet, we can leave the click action as a non-functional event for now.
+
+==== What should happen when the user clicks on the 'See more' button?
+
+I would expect it to show a modal containing the full list of recommendations. Additionally, it doesn't make sense to display the 'See more' button if the user has only two recommendations.
+
+==== How do we want to generate the list of recommendations?
+
+It would make sense to base the generation of recommendations on the history of visits. However, since we don't have the appointment functionality yet, we can return the same list for any request.
+
+==== Do we expect to have an empty state for the recommendations?
+
+==== Do we expect to have loading and error states for the recommendations list?
+
+These questions need to be addressed to finalize the implementation details of the recommendations feature.

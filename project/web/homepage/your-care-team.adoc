@@ -1,0 +1,35 @@
+= Your Care Team Homepage Widget
+
+Doctors recommendations are generated on the server through a GET request to `/users/{userId}/doctors`.
+
+== API Documentation
+
+You can find the API documentation for the doctors recommendations feature at the following link:
+link:https://backend-production-3d82.up.railway.app/api-docs/#/Users/get-users-userId-doctors[API Documentation]
+
+== Doctors Recommendations List
+
+For now, the backend always returns the same list of doctors.
+
+Each list item in the recommendations should contain the doctor's avatar, specialization, and full name. By default, the doctors list should show three or fewer items.
+
+=== Interaction
+
+Clicking the '>' button in the list item does not have any expected functionality in the current version.
+
+=== Open Questions
+
+The following open questions need to be addressed:
+
+==== Which doctors should the backend return?
+
+In my opinion, it makes sense to return a list of doctors based on your appointment history. However, since we don't have that functionality yet, it's acceptable to always return the same list of doctors.
+
+==== What should happen when the user clicks the '>' button?
+
+This action doesn't have any expected functionality in the current version. Decide on the desired behavior for future versions.
+
+==== Do we want to have loading and error states?
+
+Consider if it is necessary to have loading and error states for the doctors recommendations list. Implement these states based on project requirements and user experience considerations.
+
