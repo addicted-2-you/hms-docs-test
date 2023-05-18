@@ -1,1 +1,21 @@
-= Hello World
+= HMS Documentation
+
+Welcome to the documentation for the Medical System project. This documentation provides information about the different components and aspects of the project.
+
+== Backend Documentation
+
+The backend documentation provides detailed information about the server-side implementation of the Medical System.
+
+You can find the backend documentation at <<backend/backend.adoc, Backend Documentation>>.
+
+== Mobile Documentation
+
+The mobile documentation provides information about the mobile client application of the Medical System.
+
+You can find the mobile documentation at <<mobile/mobile.adoc, Mobile Documentation>>.
+
+== Web Documentation
+
+The web documentation provides information about the web frontend of the Medical System.
+
+You can find the web documentation at <<web/web.adoc, Web Documentation>>.
